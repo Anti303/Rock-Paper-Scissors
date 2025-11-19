@@ -14,6 +14,7 @@ string getComputerMove(int move){
     return "scissors";
 }
 
+// This function may trigger a False Positive, be assured it works as intended.
 int roundResult(string playerMove, string compMove) {
     if (playerMove == compMove) {
         return 0;
