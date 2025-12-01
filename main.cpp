@@ -87,10 +87,12 @@ int main() {
 
     cout << MAGENTA << "====== ROCK PAPER SCISSORS GAME ======" << RESET << "\n";
 
+    // Game Loop
     for (int round = 1; round <= 3; round++) {
         cout << CYAN << "\nROUND " << round << RESET << "\n";
         cout << "Make a move (rock / paper / scissors): ";
 
+        // Player Input
         while (true) {
             cin >> playerMove;
             if (playerMove == "rock" || playerMove == "paper" || playerMove == "scissors")
